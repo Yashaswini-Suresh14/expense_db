@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">💰 Expense Tracker</h1>
+      <div>
+        <a href="{{ url_for('index') }}" class="px-3 hover:underline">Dashboard</a>
+        <a href="{{ url_for('add_expense') }}" class="px-3 hover:underline">Add Expense</a>
+        <a href="{{ url_for('view_expenses') }}" class="px-3 hover:underline">View Expenses</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container mx-auto p-6">
+    {% block content %}{% endblock %}
+  </div>
+
+</body>
+</html>
