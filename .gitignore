@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Databases
+*.db
+*.sqlite3
+
+# CSV backup/export files
+*.csv
+
+# IDE/editor config files
+.idea/
+.vscode/
+*.iml
+
+# System files
+.DS_Store
+Thumbs.db
